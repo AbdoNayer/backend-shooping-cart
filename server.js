@@ -5,6 +5,8 @@ const app = express();
 
 const Article = require("./models/Article");
 
+const port = process.env.PORT || 3000;
+
 mongoose
 	.connect(
 		"mongodb+srv://yarob2:yarob123@myfirstnodejscluster.toaytf9.mongodb.net/?retryWrites=true&w=majority"
@@ -132,5 +134,5 @@ app.get("/showArticles", async (req, res) => {
 	});
 });
 app.listen(3000, () => {
-	console.log("I am listening in port 3000");
+	console.log(`I am listening in port ${port}`);
 });
