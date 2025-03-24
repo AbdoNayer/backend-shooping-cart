@@ -4,7 +4,9 @@ const Schema = mongoose.Schema;
 const articleSchema = new Schema({
 	title: String,
 	body: String,
-	numberOfLikes: Number,
+	image: String,
+	disc: String,
+	likes: Number,
 });
 
 const Article = mongoose.model("Article", articleSchema);
