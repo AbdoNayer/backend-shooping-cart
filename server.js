@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 mongoose
 	.connect(
-		"mongodb+srv://yarob2:yarob123@myfirstnodejscluster.toaytf9.mongodb.net/?retryWrites=true&w=majority"
+		"mongodb+srv://abdelwahab:A123123@cluster0.ogm2i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 	)
 	.then(() => {
 		console.log("connected successfully");
